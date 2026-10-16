@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#16090d">
+<meta name="description" content="A magical royal birthday invitation for Salma.">
+<title>Salma's Royal Birthday Invitation</title>
+<style>
+:root{--bg:#10080b;--panel:#1b0c11;--wine:#710f2b;--gold:#d9b46b;--pale:#f5df9d;--cream:#f8ecd0;--muted:#c9bba6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at top,#3b1420,var(--bg) 60%);color:var(--cream);font-family:Georgia,'Times New Roman',serif}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;background-image:radial-gradient(#f7d78c .7px,transparent .7px);background-size:23px 23px}
+button,input,select,textarea{font:inherit}.wrap{width:min(1000px,92%);margin:auto}.top{text-align:center;padding:15px;border-bottom:1px solid #9d793e55;color:var(--gold);letter-spacing:.2em;font-size:.72rem;text-transform:uppercase;position:relative;z-index:2}
+.page{display:none;position:relative;z-index:1;animation:appear .7s ease both}.page.active{display:block}@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.hero{text-align:center;padding:clamp(42px,8vh,85px) 0 30px}.crown{display:inline-block;font-size:clamp(2.8rem,7vw,4.4rem);color:var(--pale);text-shadow:0 4px 0 #79501d,0 8px 0 #4b2d12,0 0 24px #e7ae4970;animation:crownFloat 3.4s ease-in-out infinite;transform-origin:50% 70%;filter:drop-shadow(0 12px 10px #0008)}@keyframes crownFloat{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-12px) rotate(3deg)}}.eyebrow{color:var(--gold);letter-spacing:.27em;text-transform:uppercase;font-size:.75rem}
+h1{font-size:clamp(3rem,9vw,6.5rem);line-height:.94;margin:18px 0;color:var(--pale);font-weight:500;text-shadow:0 2px 0 #b68b45,0 4px 0 #7e572a,0 7px 0 #4a2b19,0 12px 22px #000c,0 0 32px #e7ae4930;transform:perspective(650px) rotateX(5deg);letter-spacing:.015em}.queen{font-size:1rem;letter-spacing:.2em;text-transform:uppercase}.rule{width:min(340px,75%);border-top:1px solid var(--gold);margin:26px auto;position:relative}.rule:after{content:'✦';position:absolute;left:50%;top:-13px;transform:translateX(-50%);padding:0 14px;background:#1b0c11;color:var(--gold)}
+.intro{max-width:660px;margin:0 auto 25px;color:var(--muted);line-height:1.8}.btn{position:relative;isolation:isolate;box-shadow:0 5px 0 #2d0712,0 10px 22px #0008,inset 0 1px 0 #fff4;display:inline-flex;justify-content:center;align-items:center;gap:9px;text-decoration:none;border:1px solid var(--gold);background:linear-gradient(#8c1b36,#4e0b1e);color:#fff0c9;border-radius:999px;padding:14px 22px;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:transform .2s,filter .2s}.btn:hover{transform:translateY(-4px) rotateX(7deg);filter:brightness(1.16);box-shadow:0 8px 0 #2d0712,0 16px 26px #0009,inset 0 1px 0 #fff5}.btn:active{transform:translateY(2px);box-shadow:0 2px 0 #2d0712,0 5px 12px #0008}.secondary{background:#170b10}.btnrow{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:20px 0}.music-note{font-size:.78rem;color:#bfae8e;margin-top:14px}.panel{position:relative;transform:perspective(1100px) rotateX(1deg);transition:transform .45s,box-shadow .45s;background:linear-gradient(145deg,#211016f2,#10080bf5);border:1px solid #b28a4b;border-radius:18px;padding:clamp(20px,4vw,32px);box-shadow:0 16px 50px #0007;margin:18px 0}.panel:hover{transform:perspective(1100px) rotateX(0deg) translateY(-4px);box-shadow:0 25px 60px #0009,0 0 25px #d9b46b12}.panel:after{content:'';position:absolute;inset:6px;border:1px solid #d9b46b30;border-radius:12px;pointer-events:none}.title{text-align:center;font-size:1.3rem;color:var(--pale);font-weight:500;letter-spacing:.12em;text-transform:uppercase;margin:0 0 20px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.detail{display:flex;gap:13px;padding:13px 0;border-bottom:1px solid #d9b46b25}.detail:last-child{border:0}.symbol{color:var(--gold);font-size:1.4rem;width:28px;text-align:center}.detail strong{display:block;color:var(--pale);margin-bottom:5px;letter-spacing:.06em}.detail span,p{color:var(--muted);line-height:1.65}.wide{width:100%}.media{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:24px 0}.tile{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;min-height:140px;padding:18px;text-decoration:none;border:1px solid #a88145;border-radius:15px;background:linear-gradient(145deg,#2a1119,#13090d);color:var(--pale)}.tile{box-shadow:0 8px 0 #090508,0 15px 28px #0007;transition:transform .35s,box-shadow .35s}.tile:hover{background:#3b1420;transform:perspective(700px) rotateY(-7deg) translateY(-5px);box-shadow:0 13px 0 #090508,0 23px 32px #0008}.tile b{font-size:1.8rem}.tile small{color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+form{display:grid;gap:14px}label{color:var(--pale);font-size:.9rem}input,select,textarea{display:block;width:100%;margin-top:7px;background:#0e070a;border:1px solid #7d5b35;border-radius:9px;padding:13px;color:var(--cream)}textarea{min-height:110px;resize:vertical}.status{display:none;margin-top:13px;padding:13px;border:1px solid var(--gold);border-radius:10px;background:#2a1711;color:var(--pale);line-height:1.6}.status.show{display:block}.fine{font-size:.78rem;color:#a9987d}.footer{text-align:center;padding:35px 10px 45px;color:#bda77f;letter-spacing:.15em;font-size:.8rem}.heart{color:#d14b61}
+.magic-sky{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;opacity:.82}.moon{position:absolute;top:7%;right:10%;width:86px;height:86px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff5cb,#d8b56b 42%,#8c642f 72%,transparent 74%);filter:drop-shadow(0 0 28px #f4d17a88);opacity:.7}.city{position:absolute;bottom:0;left:0;width:100%;height:30%;opacity:.42;background:linear-gradient(to top,#080509 0 14%,transparent 14%),linear-gradient(90deg,transparent 0 4%,#170a14 4% 8%,transparent 8% 12%,#21101c 12% 17%,transparent 17% 22%,#170a14 22% 27%,transparent 27% 34%,#24101a 34% 39%,transparent 39% 45%,#170a14 45% 51%,transparent 51% 58%,#24101a 58% 64%,transparent 64% 70%,#170a14 70% 77%,transparent 77% 82%,#24101a 82% 89%,transparent 89% 94%,#170a14 94% 98%,transparent 98%);clip-path:polygon(0 42%,5% 42%,5% 20%,8% 20%,8% 42%,14% 42%,14% 8%,18% 8%,18% 42%,24% 42%,24% 28%,28% 28%,28% 42%,35% 42%,35% 0,39% 0,39% 42%,46% 42%,46% 18%,50% 18%,50% 42%,57% 42%,57% 27%,62% 27%,62% 42%,69% 42%,69% 10%,73% 10%,73% 42%,80% 42%,80% 22%,84% 22%,84% 42%,91% 42%,91% 15%,95% 15%,95% 42%,100% 42%,100% 100%,0 100%)}
+.fly-card{position:absolute;top:-15%;left:var(--left);width:44px;height:64px;border:1px solid #e6c778;border-radius:6px;background:linear-gradient(145deg,#2a101b,#090609);box-shadow:0 0 15px #e8bf5b38;display:flex;align-items:center;justify-content:center;color:#f2d48b;font:bold 18px Georgia,serif;animation:cardFlight var(--duration) linear var(--delay) infinite;transform:rotate(var(--tilt));opacity:0}.fly-card:before{content:attr(data-rank);position:absolute;top:4px;left:5px;font-size:11px}.fly-card:after{content:attr(data-suit);position:absolute;bottom:4px;right:5px;font-size:14px}.fly-card.red{color:#e15b69;border-color:#b75b57}.spark{position:absolute;width:4px;height:4px;left:var(--left);border-radius:50%;background:#ffe6a1;box-shadow:0 0 12px 3px #f4c76c88;animation:twinkle var(--duration) ease-in-out var(--delay) infinite}
+@keyframes cardFlight{0%{transform:translate3d(0,-12vh,0) rotate(var(--tilt));opacity:0}8%{opacity:.8}50%{transform:translate3d(var(--drift),55vh,0) rotate(calc(var(--tilt) + 180deg));opacity:.75}92%{opacity:.6}100%{transform:translate3d(calc(var(--drift)*-.4),112vh,0) rotate(calc(var(--tilt) + 360deg));opacity:0}}@keyframes twinkle{0%,100%{opacity:.12;transform:scale(.6)}50%{opacity:1;transform:scale(1.5)}}
+/* Extra 3D court cards */
+.card-orbit{position:absolute;top:18%;left:50%;width:1px;height:1px;perspective:700px;pointer-events:none}.orbit-card{position:absolute;width:clamp(42px,5vw,65px);height:clamp(62px,7vw,92px);border:1px solid #f4d58b;border-radius:9px;background:linear-gradient(145deg,#f9edce 0 8%,#78172d 9% 91%,#f9edce 92%);color:#fff0c9;display:grid;place-items:center;font-size:clamp(1.1rem,2vw,1.8rem);box-shadow:0 12px 28px #0009,inset 0 0 0 3px #d9b46b55;animation:orbitFloat 7s ease-in-out infinite;transform-style:preserve-3d}.orbit-card:nth-child(1){--x:calc(-1 * min(34vw,300px));--y:65px;--r:-19deg;animation-delay:-1s}.orbit-card:nth-child(2){--x:min(29vw,265px);--y:120px;--r:21deg;animation-delay:-3s}.orbit-card:nth-child(3){--x:min(35vw,315px);--y:-15px;--r:12deg;animation-delay:-5s}.orbit-card:nth-child(4){--x:calc(-1 * min(30vw,270px));--y:180px;--r:16deg;animation-delay:-2s}@keyframes orbitFloat{0%,100%{transform:translate3d(var(--x),var(--y),0) rotateY(0deg) rotateZ(var(--r)) rotateX(0deg)}50%{transform:translate3d(var(--x),calc(var(--y) - 24px),35px) rotateY(180deg) rotateZ(calc(var(--r) + 8deg)) rotateX(12deg)}}
+.page.active{animation:pageEnter .85s cubic-bezier(.2,.8,.2,1) both;transform-origin:50% 0}@keyframes pageEnter{from{opacity:0;transform:perspective(1200px) rotateX(-7deg) translateY(25px) scale(.985);filter:blur(3px)}to{opacity:1;transform:perspective(1200px) rotateX(0) translateY(0) scale(1);filter:blur(0)}}
+.detail{transition:transform .25s}.detail:hover{transform:translateX(5px)}
+body>*:not(.magic-sky){position:relative;z-index:1}
+@media(max-width:680px){.grid,.media{grid-template-columns:1fr}.top{letter-spacing:.1em}.hero{padding-top:40px}.moon{width:58px;height:58px}.orbit-card:nth-child(1){--x:-36vw;--y:38px}.orbit-card:nth-child(2){--x:31vw;--y:92px}.orbit-card:nth-child(3){--x:34vw;--y:-10px}.orbit-card:nth-child(4){--x:-33vw;--y:135px}.card-orbit{top:13%}.intro{max-width:92%;font-size:.96rem}.panel{transform:none}.panel:hover{transform:translateY(-2px)}.btn{max-width:100%;white-space:normal}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.fly-card,.spark{display:none}.moon{filter:none}}
+
+.salma-portrait{width:min(430px,88%);margin:24px auto 28px;padding:9px;border:1px solid var(--gold);border-radius:18px;background:linear-gradient(145deg,#3a1820,#10080b);box-shadow:0 12px 0 #080507,0 25px 55px #000b,0 0 28px #d9b46b22;transform:perspective(1000px) rotateY(-2deg);overflow:hidden;position:relative}.salma-portrait:before{content:"";position:absolute;inset:15px;border:1px solid #e9c77977;border-radius:10px;pointer-events:none;z-index:1}.salma-portrait img{display:block;width:100%;height:auto;max-height:560px;object-fit:cover;object-position:center;border-radius:10px}.salma-portrait figcaption{padding:12px 4px 5px;color:var(--pale);letter-spacing:.2em;text-transform:uppercase;font-size:.72rem;text-shadow:0 2px 8px #000}#details .hero{padding-top:45px}#details .panel{backdrop-filter:blur(3px)}@media(max-width:680px){.salma-portrait{width:min(340px,92%);margin:18px auto 24px;transform:none}.salma-portrait img{max-height:none}.salma-portrait:before{inset:12px}}
+
+.celebration-art-wrap{max-width:620px;margin:0 auto 28px;perspective:1200px}
+.celebration-art{margin:0;position:relative;padding:7px;border:1px solid #d9b46b;border-radius:18px;background:linear-gradient(135deg,#e8c77d,#54101f 35%,#14080c 75%,#d9b46b);box-shadow:0 12px 0 #090508,0 28px 65px #000b,0 0 35px #e7b64b2a;animation:artFloat 6s ease-in-out infinite;transform-style:preserve-3d;overflow:hidden}
+.celebration-art:after{content:"";position:absolute;inset:10px;border:1px solid #f3d9959c;border-radius:11px;pointer-events:none;box-shadow:inset 0 0 25px #f7d98c16}
+.celebration-art img{display:block;width:100%;height:auto;border-radius:11px;animation:artGlow 5s ease-in-out infinite;transform:translateZ(12px)}
+.celebration-art figcaption{position:absolute;z-index:2;right:16px;top:14px;padding:8px 10px;border:1px solid #d9b46b;border-radius:999px;background:#16090dd9;color:#f8df9f;font-size:.72rem;letter-spacing:.08em;box-shadow:0 5px 15px #0009}
+@keyframes artFloat{0%,100%{transform:rotateY(-1deg) rotateX(1deg) translateY(0)}50%{transform:rotateY(1deg) rotateX(-1deg) translateY(-7px)}}
+@keyframes artGlow{0%,100%{filter:saturate(1) brightness(.98)}50%{filter:saturate(1.08) brightness(1.06)}}
+.fly-card{z-index:1;cursor:default}.orbit-card{cursor:default}
+.btn,.tile{touch-action:manipulation}
+@media(max-width:680px){.celebration-art-wrap{width:94%}.celebration-art{animation:artFloat 8s ease-in-out infinite}.celebration-art figcaption{font-size:.62rem;right:10px;top:10px;padding:6px 8px}}
+@media(prefers-reduced-motion:reduce){.celebration-art,.celebration-art img{animation:none!important}}
+
+
+/* Enchanted portrait polish: animated golden aura, moving glints, and candle-like shimmer */
+.salma-portrait{animation:portraitFloat 6s ease-in-out infinite, portraitGlow 3.2s ease-in-out infinite; box-shadow:0 12px 0 #080507,0 25px 55px #000b,0 0 30px #d9b46b55}
+.salma-portrait:after{content:"✦   ·   ✧      ✦   ·   ✧";position:absolute;inset:0;display:flex;align-items:center;justify-content:space-around;color:#ffe8a2;font-size:clamp(1rem,3vw,1.7rem);text-shadow:0 0 8px #ffd56a,0 0 20px #ffbb42;opacity:.55;pointer-events:none;animation:glintSweep 4s ease-in-out infinite;mix-blend-mode:screen}
+.salma-portrait img{animation:pictureGlow 3s ease-in-out infinite alternate}
+#cover h1{animation:titleGlow 3s ease-in-out infinite alternate}
+#openInvite{animation:buttonMagic 2.8s ease-in-out infinite}
+@keyframes portraitFloat{0%,100%{transform:perspective(1000px) rotateY(-2deg) translateY(0)}50%{transform:perspective(1000px) rotateY(2deg) translateY(-7px)}}
+@keyframes portraitGlow{0%,100%{box-shadow:0 12px 0 #080507,0 25px 55px #000b,0 0 22px #d9b46b35}50%{box-shadow:0 12px 0 #080507,0 25px 55px #000b,0 0 44px #ffd878a8}}
+@keyframes pictureGlow{from{filter:brightness(1) saturate(1)}to{filter:brightness(1.06) saturate(1.08)}}
+@keyframes glintSweep{0%,100%{opacity:.12;transform:translateX(-5px) scale(.98)}50%{opacity:.85;transform:translateX(5px) scale(1.02)}}
+@keyframes titleGlow{from{filter:drop-shadow(0 0 3px #e7ae4930)}to{filter:drop-shadow(0 0 16px #ffd87888)}}
+@keyframes buttonMagic{0%,100%{box-shadow:0 5px 0 #2d0712,0 10px 22px #0008,0 0 8px #d9b46b22}50%{box-shadow:0 5px 0 #2d0712,0 10px 22px #0008,0 0 22px #ffd87888}}
+@media(max-width:680px){.salma-portrait{animation:portraitGlow 3.2s ease-in-out infinite;transform:none}.salma-portrait:after{font-size:1rem}}
+@media(prefers-reduced-motion:reduce){.salma-portrait,.salma-portrait:after,.salma-portrait img,#cover h1,#openInvite{animation:none!important}}
+
+
+/* Enchanted card-world: moving light sweeps and luminous lettering across both pages */
+body{--magic-gold:#ffe6a0}
+body h1,body h2,body h3,body strong,body .eyebrow,body .queen,body .title,body .top,body .footer,body .btn,body .tile,body .salma-portrait figcaption,body .celebration-art figcaption{ text-shadow:0 0 5px #ffd87570,0 0 13px #d99b3970; animation:letterSpark 3.4s ease-in-out infinite alternate; }
+@keyframes letterSpark{0%{filter:brightness(.96) drop-shadow(0 0 1px #ffd56a20)}100%{filter:brightness(1.18) drop-shadow(0 0 8px #ffd56a9c)}}
+/* The portraits and cards shimmer as if illuminated by enchanted candlelight. */
+.salma-portrait:after,.celebration-art:before{content:"";position:absolute;z-index:2;inset:-30% -60%;pointer-events:none;background:linear-gradient(112deg,transparent 35%,#fff1b51c 43%,#fff7d8a8 49%,#f7bd4a35 53%,transparent 61%);transform:translateX(-70%) rotate(8deg);animation:magicSweep 5.8s ease-in-out infinite;mix-blend-mode:screen}
+.salma-portrait:after{inset:-20% -70%;}
+@keyframes magicSweep{0%,15%{transform:translateX(-75%) rotate(8deg);opacity:0}35%{opacity:.9}70%,100%{transform:translateX(75%) rotate(8deg);opacity:0}}
+.fly-card{filter:drop-shadow(0 0 7px #ffd56a90);box-shadow:0 0 15px #e8bf5b70,0 0 28px #ffd56a35,inset 0 0 10px #ffe5a333;animation:cardFlight var(--duration) linear var(--delay) infinite,cardMagicGlow 2.5s ease-in-out infinite alternate}
+.orbit-card{filter:drop-shadow(0 0 8px #ffd56a99);animation:orbitFloat 7s ease-in-out infinite,cardMagicGlow 2.3s ease-in-out infinite alternate}
+@keyframes cardMagicGlow{from{filter:brightness(.94) drop-shadow(0 0 3px #ffd56a55)}to{filter:brightness(1.18) drop-shadow(0 0 15px #ffe8a8dd)}}
+.salma-portrait img,.celebration-art img{animation:pictureGlow 3s ease-in-out infinite alternate,photoBreath 7s ease-in-out infinite}
+@keyframes photoBreath{0%,100%{transform:translateZ(12px) scale(1)}50%{transform:translateZ(12px) scale(1.012)}}
+.spark{box-shadow:0 0 12px 3px #f4c76cbb,0 0 24px 5px #ffe9a455}
+@media(prefers-reduced-motion:reduce){body h1,body h2,body h3,body strong,body .eyebrow,body .queen,body .title,body .top,body .footer,body .btn,body .tile,body .salma-portrait figcaption,body .celebration-art figcaption,.salma-portrait:after,.celebration-art:before,.fly-card,.orbit-card,.salma-portrait img,.celebration-art img{animation:none!important}}
+
+</style>
+</head>
+<body>
+<div class="magic-sky" aria-hidden="true"><div class="moon"></div><div class="city"></div><div class="card-orbit"><div class="orbit-card">♥</div><div class="orbit-card">♠</div><div class="orbit-card">♦</div><div class="orbit-card">♣</div></div>
+<div class="fly-card" style="--left:7%;--duration:19s;--delay:-7s;--tilt:-18deg;--drift:48px" data-rank="2" data-suit="♥">♥</div>
+<div class="fly-card red" style="--left:23%;--duration:24s;--delay:-16s;--tilt:14deg;--drift:-35px" data-rank="9" data-suit="♦">♦</div>
+<div class="fly-card" style="--left:43%;--duration:21s;--delay:-11s;--tilt:24deg;--drift:52px" data-rank="Q" data-suit="♠">♠</div>
+<div class="fly-card red" style="--left:64%;--duration:26s;--delay:-4s;--tilt:-12deg;--drift:-46px" data-rank="A" data-suit="♥">♥</div>
+<div class="fly-card" style="--left:84%;--duration:22s;--delay:-14s;--tilt:17deg;--drift:31px" data-rank="K" data-suit="♣">♣</div>
+<div class="spark" style="--left:12%;top:23%;--duration:3s;--delay:-1s"></div><div class="spark" style="--left:37%;top:15%;--duration:4s;--delay:-2s"></div><div class="spark" style="--left:57%;top:31%;--duration:3.5s;--delay:-.5s"></div><div class="spark" style="--left:78%;top:19%;--duration:4.5s;--delay:-3s"></div><div class="spark" style="--left:91%;top:39%;--duration:3.2s;--delay:-1.7s"></div>
+</div>
+<audio id="birthdayMusic" src="birthday-song.mp3" preload="auto" loop></audio>
+<div class="top">✦ A Royal Invitation ✦ &nbsp; • &nbsp; Let the Games Begin</div>
+
+<section id="cover" class="page active">
+<header class="hero wrap"><div class="crown">♛</div><figure class="salma-portrait"><img src="salma-hero.png" alt="Salma in a royal birthday portrait"><figcaption>✦ The Birthday Queen ✦</figcaption></figure><div class="eyebrow">You are cordially invited to</div>
+<h1>Salma<br>Mostafa Rashid</h1><div class="queen">Queen of Card Games</div><div class="rule"></div>
+<p class="intro">The cards have been dealt, the candles are glowing, and the kingdom is ready to celebrate. Join us for a magical birthday gathering filled with laughter, memories, and a little royal mischief.</p>
+<div class="btnrow"><button class="btn" id="openInvite">♛ Open the Invitation</button></div>
+<div class="music-note" id="musicHint">Tap “Open the Invitation” to enter the celebration and start the birthday music.</div>
+</header>
+<div class="wrap"><section class="panel" style="text-align:center"><h2 class="title">A Little Royal Mystery</h2><p>One special day. A royal gathering. And a whole deck of memories waiting to be made.</p><p class="fine">Dress like royalty, bring your best smile, and let the games begin.</p></section></div>
+</section>
+
+<section id="details" class="page">
+<header class="hero wrap" style="padding-bottom:20px"><div class="crown">♛</div><div class="eyebrow">The royal court awaits</div><h1 style="font-size:clamp(2.5rem,7vw,4.5rem)">The Celebration</h1><div class="rule"></div><p class="intro">You’re officially invited to celebrate Salma. Scroll for the details, directions, RSVP, photos, video, and a message for the birthday queen.</p>
+<div class="btnrow"><button class="btn secondary" id="backToCover">← Back to Cover</button><button class="btn" id="musicToggle" aria-pressed="true">♫ Pause Music</button></div></header>
+<div class="wrap celebration-art-wrap"><figure class="celebration-art"><img src="celebration-design.png" alt="Royal magical birthday celebration design for Salma"><figcaption>✦ A little more magic is coming ✦</figcaption></figure></div>
+<main class="wrap">
+<div class="grid">
+<section class="panel"><h2 class="title">The Royal Details</h2>
+<div class="detail"><div class="symbol">♜</div><div><strong>DATE</strong><span>February 5th, 1997 <em>(please update to the party date)</em></span></div></div>
+<div class="detail"><div class="symbol">◷</div><div><strong>TIME</strong><span>To be announced by the host</span></div></div>
+<div class="detail"><div class="symbol">♥</div><div><strong>DRESS CODE</strong><span>Royal colors, elegant looks, and a touch of magic</span></div></div>
+<p>Please RSVP below so the royal court can save your seat.</p></section>
+<section class="panel"><h2 class="title">The Venue</h2><div class="detail"><div class="symbol">⌖</div><div><strong>SOLITAIRE INDOOR — MAADI CORNICHE</strong><span>Nile Corniche, Maadi, Cairo, Egypt</span></div></div>
+<p>Check the venue and event booking details with the host before the party.</p><div class="btnrow"><a class="btn wide" href="https://www.google.com/maps/search/?api=1&amp;query=Solitaire+Indoor+Maadi+Corniche+Cairo" target="_blank" rel="noopener">⌖ Get Directions on Google Maps</a></div></section>
+</div>
+<section class="panel" id="rsvp"><h2 class="title">Will You Join the Royal Court?</h2><p style="text-align:center">Kindly let Salma know if you’ll be there.</p>
+<form id="rsvpForm"><label>Your Name<input name="guest" required placeholder="Enter your full name"></label><label>Your Response<select name="response" required><option value="">Choose your response</option><option>Yes, I'll be there!</option><option>Sorry, I can't make it</option><option>I'm not sure yet</option></select></label><label>Number of Guests<select name="guests"><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select></label><button class="btn wide" type="submit">♛ Confirm My Attendance</button></form><div id="rsvpStatus" class="status" role="status"></div><p class="fine">Demo mode: this form shows a confirmation on this device but does not send RSVP details to the host. Connect a form service to collect responses online.</p></section>
+<nav class="media" aria-label="Party links"><a class="tile" href="https://photos.google.com/" target="_blank" rel="noopener"><b>✧</b><strong>Party Photos</strong><small>Open Google Photos</small></a><a class="tile" href="https://www.youtube.com/" target="_blank" rel="noopener"><b>▷</b><strong>Party Video</strong><small>Coming soon · YouTube</small></a><a class="tile" href="#message"><b>♡</b><strong>Leave a Sweet Message</strong><small>Write a message here</small></a></nav>
+<section class="panel" id="photos"><h2 class="title">The Royal Album</h2><p style="text-align:center">The party photos will appear here after the celebration. Replace this section with your photo album link or add image files to the project.</p><div class="btnrow"><a class="btn secondary wide" href="https://photos.google.com/" target="_blank" rel="noopener">Open Photo Albums</a></div></section>
+<section class="panel" id="video"><h2 class="title">The Celebration Reel</h2><p style="text-align:center">Add a public video URL here when the celebration reel is ready.</p><div class="btnrow"><a class="btn secondary wide" href="https://www.youtube.com/" target="_blank" rel="noopener">Find the Party Video</a></div></section>
+<section class="panel" id="message"><h2 class="title">A Sweet Note for Salma</h2><p style="text-align:center">Leave a little sparkle in the Queen’s guestbook.</p>
+<form id="messageForm"><label>Your Name<input name="sender" required placeholder="Who is sending the love?"></label><label>Your Message<textarea name="message" required maxlength="500" placeholder="Write something lovely for Salma..."></textarea></label><button class="btn wide" type="submit">♥ Add Your Sweet Message</button></form><div id="messageStatus" class="status"></div><div id="guestbook"></div><p class="fine">Messages appear in this page preview only. Online collection requires a connected form or database.</p></section>
+</main><footer class="footer">LET THE GAMES BEGIN <span class="heart">♥</span><br><br>MADE WITH LOVE FOR SALMA</footer>
+</section>
+<script>
+const music = document.getElementById('birthdayMusic');
+const cover = document.getElementById('cover');
+const details = document.getElementById('details');
+const musicHint = document.getElementById('musicHint');
+function showPage(page){
+  cover.classList.toggle('active', page === 'cover');
+  details.classList.toggle('active', page === 'details');
+  window.scrollTo({top:0, behavior:'smooth'});
+  // The same audio element stays mounted, so navigation never resets the song.
+}
+document.getElementById('openInvite').addEventListener('click', async () => {
+  showPage('details');
+  try {
+    await music.play();
+    musicHint.textContent = 'The birthday music is playing.';
+  } catch (e) {
+    musicHint.textContent = 'Your browser blocked automatic playback. Tap “Play Music” on the celebration page.';
+    document.getElementById('musicToggle').textContent = '♫ Play Music';
+  }
+});
+document.getElementById('backToCover').addEventListener('click', () => showPage('cover'));
+document.getElementById('musicToggle').addEventListener('click', async function(){
+  if (music.paused) {
+    try { await music.play(); this.textContent = '♫ Pause Music'; this.setAttribute('aria-pressed','true'); }
+    catch(e) { this.textContent = '♫ Play Music'; }
+  } else {
+    music.pause(); this.textContent = '♫ Play Music'; this.setAttribute('aria-pressed','false');
+  }
+});
+document.getElementById('rsvpForm').addEventListener('submit', function(e){
+  e.preventDefault(); const d = new FormData(this);
+  const el = document.getElementById('rsvpStatus');
+  el.textContent = 'Thank you, ' + d.get('guest') + '! Your response: “' + d.get('response') + '” Number of guests: ' + d.get('guests') + '. This demo does not send your RSVP to the host.';
+  el.classList.add('show');
+});
+document.getElementById('messageForm').addEventListener('submit', function(e){
+  e.preventDefault(); const d = new FormData(this);
+  const card = document.createElement('div'); card.className = 'status show';
+  const title = document.createElement('strong'); title.textContent = '♥ ' + d.get('sender');
+  const msg = document.createElement('p'); msg.textContent = d.get('message');
+  card.append(title, msg); document.getElementById('guestbook').prepend(card);
+  const status = document.getElementById('messageStatus'); status.textContent = 'Your lovely message has been added to the guestbook preview.'; status.classList.add('show'); this.reset();
+});
+</script>
+</body></html>
